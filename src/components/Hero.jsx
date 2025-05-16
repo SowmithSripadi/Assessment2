@@ -4,39 +4,43 @@ import ranking from "../assets/FIU4-graphic.jpg";
 
 export default function Hero() {
   return (
-    <header
-      className="relative h-[480px] md:h-[540px] lg:h-[600px] overflow-hidden"
-      id="top"
-    >
-      {/* background image */}
-      <img
-        src={banner}
-        alt="Excited FIU graduates during commencement"
-        className="absolute inset-0 w-full h-full object-cover"
-        loading="eager"
-      />
+    <>
+      {/* ───── HERO ───── */}
+      <header
+        id="top"
+        className="relative h-[480px] sm:h-[540px] md:h-[600px] lg:h-[680px] xl:h-[720px] bg-center bg-cover"
+        style={{ backgroundImage: `url(${banner})` }}
+      >
+        {/* gradient overlay (#333333A6 -> transparent) */}
+        <div className=" absolute inset-0 bg-gradient-to-b from-[rgba(51,51,51,0.65)] to-transparent bg-no-repeat bg-clip-padding" />
 
-      {/* overlay tint */}
-      <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
+        {/* headline content */}
+        <div className="relative z-10 h-full flex flex-col items-center text-center gap-6">
+          {/* FLORIDA INTERNATIONAL UNIVERSITY */}
+          <p className=" font-furore uppercase text-fiuYellow tracking-extra text-base sm:text-lg md:text-xl xl:text-2xl drop-shadow-md mt-36">
+            Florida International University
+          </p>
 
-      {/* headline block */}
-      <div className="relative z-10 max-w-5xl mx-auto h-full flex flex-col items-center justify-center text-center px-4">
-        <p className="font-furore tracking-widest text-yellow-400 text-sm md:text-base uppercase">
-          Florida International University
-        </p>
+          {/* INNOVATION CREATES IMPACT */}
+          <h1 className="font-barlow font-extrabold uppercase tracking-wider text-2xl sm:text-3xl md:text-5xl xl:text-6xl drop-shadow-md max-w-[90%]">
+            Innovation Creates Impact
+          </h1>
+        </div>
 
-        <h1 className="font-furore text-3xl md:text-5xl lg:text-6xl font-semibold inline-block mt-1 md:mt-2">
-          Innovation Creates Impact
-        </h1>
-
-        {/* ranking graphic */}
+        {/* FIU #4 graphic – pinned to bottom-centre of banner */}
         <img
           src={ranking}
           alt="FIU #4 – Wall Street Journal Best Public Universities 2024"
-          className="w-56 md:w-72 lg:w-80 mt-6 md:mt-8"
-          loading="lazy"
+          className="absolute left-1/2 bottom-10 translate-x-[-50%] translate-y-1/2 w-56 md:w-72 lg:w-80 shadow-lg"
+          loading="eager"
         />
+      </header>
+
+      {/* ───── COLOR STRIPE (sits below the banner) ───── */}
+      <div className="flex h-2" aria-hidden="true">
+        <div className="w-1/2 bg-gradient-to-r from-fiuGold to-fiuCyan" />
+        <div className="w-1/2 bg-gradient-to-r from-fiuCyan to-fiuGold" />
       </div>
-    </header>
+    </>
   );
 }

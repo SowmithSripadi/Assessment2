@@ -1,21 +1,22 @@
 import React from "react";
 import logo from "../assets/FIU-logo.png";
 import { Facebook, Twitter, Linkedin, Youtube, Instagram } from "lucide-react"; // optional icons library
+import flickrPng from "../assets/icons/flickr.png";
 
 const socials = [
-  { href: "https://www.facebook.com/FIU", Icon: Facebook, label: "Facebook" },
-  { href: "https://twitter.com/FIU", Icon: Twitter, label: "Twitter" },
-  {
-    href: "https://www.linkedin.com/school/fiu",
-    Icon: Linkedin,
-    label: "LinkedIn",
-  },
-  { href: "https://www.youtube.com/FIU", Icon: Youtube, label: "YouTube" },
   {
     href: "https://www.instagram.com/FIU",
     Icon: Instagram,
     label: "Instagram",
   },
+  {
+    href: "https://www.linkedin.com/school/fiu",
+    Icon: Linkedin,
+    label: "LinkedIn",
+  },
+  { href: "https://www.facebook.com/FIU", Icon: Facebook, label: "Facebook" },
+  { href: "https://twitter.com/FIU", Icon: Twitter, label: "Twitter" },
+  { href: "https://www.youtube.com/FIU", Icon: Youtube, label: "YouTube" },
 ];
 
 export default function Footer() {
@@ -25,7 +26,7 @@ export default function Footer() {
         <img
           src={logo}
           alt="FIU logo"
-          className="w-32 md:w-40 mb-4"
+          className="w-[150px] md:w-[300px]  mb-4"
           loading="lazy"
         />
 
@@ -33,15 +34,21 @@ export default function Footer() {
           aria-label="Footer links"
           className="flex gap-4 text-sm md:text-base mb-6"
         >
-          <a href="https://admissions.fiu.edu" className="hover:underline">
+          <a
+            href="https://admissions.fiu.edu"
+            className=" text-fiuYellow underline"
+          >
             Apply to FIU
           </a>
           <span aria-hidden="true">|</span>
-          <a href="https://fiu.edu/contact" className="hover:underline">
+          <a
+            href="https://fiu.edu/contact"
+            className=" text-fiuYellow underline"
+          >
             Contact FIU
           </a>
           <span aria-hidden="true">|</span>
-          <a href="https://news.fiu.edu" className="hover:underline">
+          <a href="https://news.fiu.edu" className=" text-fiuYellow underline">
             FIU News
           </a>
         </nav>
@@ -59,11 +66,24 @@ export default function Footer() {
               </a>
             </li>
           ))}
+          {/* Flickr icon */}
+          <li>
+            <a
+              href="https://www.flickr.com/photos/fiu"
+              aria-label="Flickr"
+              className="hover:opacity-70 transition-opacity"
+            >
+              <img
+                src={flickrPng}
+                alt="Flickr"
+                className="w-[18px] h-[18px] object-contain"
+                loading="lazy"
+              />
+            </a>
+          </li>
         </ul>
 
-        <p className="text-xs text-gray-400">
-          © 2025 Florida International University
-        </p>
+        <p className="text-md">© 2025 Florida International University</p>
       </div>
     </footer>
   );

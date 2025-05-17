@@ -15,7 +15,7 @@ export default function Hero() {
         <div className=" absolute inset-0 bg-gradient-to-b from-[rgba(51,51,51,0.65)] to-transparent bg-no-repeat bg-clip-padding" />
 
         {/* headline content */}
-        <div className="relative z-10 h-full flex flex-col items-center text-center gap-6">
+        <div className="relative z-10 h-full flex flex-col items-center text-center gap-8">
           {/* FLORIDA INTERNATIONAL UNIVERSITY */}
           <p className=" font-furore uppercase text-fiuYellow tracking-extra text-base sm:text-lg md:text-xl xl:text-2xl drop-shadow-md mt-36">
             Florida International University
@@ -31,7 +31,7 @@ export default function Hero() {
         <img
           src={ranking}
           alt="FIU #4 – Wall Street Journal Best Public Universities 2024"
-          className="absolute left-1/2 bottom-10 translate-x-[-50%] translate-y-1/2 w-56 md:w-72 lg:w-80 shadow-lg"
+          className="absolute left-1/2 bottom-10 translate-x-[-50%] translate-y-1/2 w-56 md:w-72 lg:w-[351px] shadow-lg"
           loading="eager"
         />
       </header>

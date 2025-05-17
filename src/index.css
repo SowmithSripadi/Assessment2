@@ -2,19 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom fonts */
-@import url("https://use.typekit.net/fpx6thr.css"); /* Furore & Barlow */
-@import url("https://digicdn.fiu.edu/fonts/furore.css");
-@import url("https://digicdn.fiu.edu/fonts/barlow.css");
-
 html {
   scroll-behavior: smooth;
-}
-
-.font-furore {
-  font-family: "furore", sans-serif;
-}
-
-.font-barlow {
-  font-family: "barlow", sans-serif;
 }

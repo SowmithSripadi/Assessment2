@@ -39,13 +39,13 @@ export default function Footer() {
         <img
           src={logo}
           alt="FIU logo"
-          className="w-[250px] md:w-[300px] mb-4"
+          className="w-[250px] md:w-[297px] mb-4"
           loading="lazy"
         />
 
         <nav
           aria-label="Footer links"
-          className="flex gap-4 text-sm md:text-base mb-6"
+          className="flex gap-4 text-sm md:text-16px mb-6"
         >
           <a
             href="https://admissions.fiu.edu"
@@ -100,7 +100,7 @@ export default function Footer() {
           </li>
         </ul>
 
-        <p className="text-md">© 2025 Florida International University</p>
+        <p className="text-16px">© 2025 Florida International University</p>
       </div>
     </footer>
   );

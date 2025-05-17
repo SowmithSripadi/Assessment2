@@ -21,7 +21,7 @@ export default function SectionHeading({
       />
       <h3
         id={id}
-        className="flex-none font-barlow font-thin tracking-widest text-2xl md:text-3xl uppercase text-center"
+        className="flex-none font-barlow font-light tracking-3.84 text-2xl md:text-32px uppercase text-center"
       >
         {title}
       </h3>

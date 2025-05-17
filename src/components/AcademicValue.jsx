@@ -28,12 +28,12 @@ export default function AcademicValue() {
     >
       <h2
         id="academic-heading"
-        className="text-center text-fiuYellow text-2xl md:text-3xl font-semibold mb-6"
+        className="text-center text-fiuYellow text-2xl md:text-32px tracking-wider font-extraBold mb-6"
       >
         Highest Ranking Ever
       </h2>
 
-      <p className="text-center mb-10">
+      <p className="text-center mb-10 text-18px-md">
         No. 64 in the nation in <em>U.S. News &amp; World Report</em>'s
         public-university rankings
       </p>
@@ -47,18 +47,18 @@ export default function AcademicValue() {
         className="grid gap-10 sm:gap-12 md:gap-6 md:grid-cols-3 text-center md:text-left mt-10 sm:mt-16"
       >
         {items.map(({ title, subtitle, source }) => (
-          <li key={subtitle} className="flex flex-col gap-1">
-            <h3 className="text-fiuYellow text-2xl md:text-3xl font-semibold">
+          <li key={subtitle} className="flex flex-col">
+            <h3 className="text-fiuYellow text-2xl md:text-32px-md font-bold">
               {title}
             </h3>
-            <p className="mt-1 font-semibold text-lg">{subtitle}</p>
-            <p className="italic text-md mt-1">(Source: {source})</p>
+            <p className="mt-1 font-bold text-18px-lg">{subtitle}</p>
+            <p className="italic text-16px-lg">(Source: {source})</p>
           </li>
         ))}
       </ul>
 
       {/* highlight call-out */}
-      <p className="text-center max-w-3xl mx-auto mt-20 text-xl">
+      <p className="text-center max-w-3xl mx-auto mt-16 text-18px-md">
         FIU has been designated a&nbsp;
         <span className="text-sky-300">University of Distinction&nbsp;</span>
         in environmental resilience by the Florida Board of Governors.

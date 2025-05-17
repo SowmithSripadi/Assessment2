@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <main className="font-barlow bg-fiuBlue text-white leading-relaxed">
+    <main className="font-barlow bg-fiuBlue text-white">
       <Hero />
       <AnchorNav />
       <AcademicValue />

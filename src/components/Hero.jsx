@@ -9,7 +9,7 @@ export default function Hero() {
       <header
         id="top"
         aria-label="University hero banner"
-        className="relative h-[480px] sm:h-[540px] md:h-[600px] lg:h-[680px] xl:h-[720px] bg-center bg-cover"
+        className="relative h-[480px] sm:h-[540px] md:h-[600px] lg:h-[680px] xl:h-[800px] bg-center bg-cover"
         style={{ backgroundImage: `url(${banner})` }}
       >
         {/* gradient overlay (#333333A6 → transparent) */}
@@ -19,14 +19,11 @@ export default function Hero() {
         />
 
         {/* headline content */}
-        <div className="relative z-10 h-full flex flex-col items-center text-center gap-8">
-          {/* FLORIDA INTERNATIONAL UNIVERSITY */}
-          <h2 className="font-furore uppercase text-fiuYellow tracking-extra text-base sm:text-lg md:text-xl xl:text-2xl drop-shadow-md mt-36">
+        <div className="relative z-10 h-full flex flex-col items-center text-center gap-10">
+          <h2 className="font-furore uppercase text-fiuYellow tracking-3.22 text-base sm:text-lg md:text-26px drop-shadow-md mt-44">
             Florida International University
           </h2>
-
-          {/* INNOVATION CREATES IMPACT */}
-          <h1 className="font-barlow font-extrabold uppercase tracking-wider text-2xl sm:text-3xl md:text-5xl xl:text-6xl drop-shadow-md max-w-[90%]">
+          <h1 className="font-barlow font-extraBold uppercase tracking-3.22 text-2xl sm:text-3xl md:text-5xl lg:text-60px drop-shadow-md max-w-[90%]">
             Innovation Creates Impact
           </h1>
         </div>

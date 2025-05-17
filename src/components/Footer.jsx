@@ -26,7 +26,7 @@ export default function Footer() {
         <img
           src={logo}
           alt="FIU logo"
-          className="w-[150px] md:w-[300px]  mb-4"
+          className="w-[250px] md:w-[300px]  mb-4"
           loading="lazy"
         />
 

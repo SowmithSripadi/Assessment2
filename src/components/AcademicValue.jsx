@@ -23,7 +23,7 @@ export default function AcademicValue() {
   return (
     <section
       id="academic"
-      className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8  md:mt-20"
+      className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8  md:mt-20 mt-10"
     >
       <h2 className="text-center text-fiuYellow text-2xl md:text-3xl font-semibold mb-6">
         Highest Ranking Ever
@@ -37,7 +37,7 @@ export default function AcademicValue() {
       <SectionHeading title="Academic Value" />
 
       {/* value grid */}
-      <div className="grid  md:gap-6 md:grid-cols-3 mt-16">
+      <div className="grid md:gap-6 md:grid-cols-3 sm:mt-16 mt-10 gap-10 sm:gap-0 text-center sm:text-left">
         {items.map((it) => (
           <div key={it.subtitle} className="flex flex-col gap-1">
             <h4 className="text-fiuYellow text-2xl md:text-3xl font-semibold">

@@ -8,14 +8,14 @@ export default function Hero() {
       {/* ───── HERO ───── */}
       <header
         id="top"
-        className="relative h-[480px] sm:h-[540px] md:h-[600px] lg:h-[680px] xl:h-[720px] bg-center bg-cover"
+        className="relative h-[480px] sm:h-[540px] md:h-[600px] lg:h-[680px] xl:h-[720px] bg-center bg-cover "
         style={{ backgroundImage: `url(${banner})` }}
       >
         {/* gradient overlay (#333333A6 -> transparent) */}
         <div className=" absolute inset-0 bg-gradient-to-b from-[rgba(51,51,51,0.65)] to-transparent bg-no-repeat bg-clip-padding" />
 
         {/* headline content */}
-        <div className="relative z-10 h-full flex flex-col items-center text-center gap-8">
+        <div className="relative z-10 h-full flex flex-col items-center text-center gap-8 ">
           {/* FLORIDA INTERNATIONAL UNIVERSITY */}
           <p className=" font-furore uppercase text-fiuYellow tracking-extra text-base sm:text-lg md:text-xl xl:text-2xl drop-shadow-md mt-36">
             Florida International University

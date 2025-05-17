@@ -13,14 +13,14 @@ export default function SectionHeading({
   return (
     <div className="flex items-center mb-8">
       <span
-        className={`hidden md:block flex-1 border-b-2 ${borderClass} mr-4`}
+        className={`flex-1 border-b-2 ${borderClass} mr-4`}
         aria-hidden="true"
       />
-      <h3 className="font-barlow font-thin tracking-widest text-2xl md:text-3xl uppercase">
+      <h3 className="flex-none font-barlow font-thin tracking-widest text-2xl md:text-3xl uppercase text-center">
         {title}
       </h3>
       <span
-        className={`hidden md:block flex-1 border-b-2 ${borderClass} ml-4`}
+        className={`flex-1 border-b-2 ${borderClass} ml-4`}
         aria-hidden="true"
       />
     </div>

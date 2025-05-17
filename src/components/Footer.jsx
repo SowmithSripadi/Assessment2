@@ -14,22 +14,26 @@ import flickrPng from "../assets/icons/flickr.png";
 
 const socials = [
   {
-    href: "https://www.instagram.com/FIU",
+    href: "https://www.instagram.com/fiuinstagram/",
     Icon: FaInstagram,
     label: "Instagram",
   },
   {
-    href: "https://www.linkedin.com/school/fiu",
+    href: "https://www.linkedin.com/school/florida-international-university/",
     Icon: FaLinkedinIn,
     label: "LinkedIn",
   },
   {
-    href: "https://www.facebook.com/FIU",
+    href: "https://www.facebook.com/floridainternational/",
     Icon: FaFacebookF,
     label: "Facebook",
   },
   { href: "https://twitter.com/FIU", Icon: FaTwitter, label: "Twitter" },
-  { href: "https://www.youtube.com/FIU", Icon: FaYoutube, label: "YouTube" },
+  {
+    href: "https://www.youtube.com/@FloridaInternational",
+    Icon: FaYoutube,
+    label: "YouTube",
+  },
 ];
 
 export default function Footer() {
@@ -49,19 +53,25 @@ export default function Footer() {
         >
           <a
             href="https://admissions.fiu.edu"
+            target="_blank"
             className="underline text-fiuYellow"
           >
             Apply to FIU
           </a>
           <span aria-hidden="true">|</span>
           <a
-            href="https://fiu.edu/contact"
+            href="https://www.fiu.edu/about/contact-us/index.html"
+            target="_blank"
             className="underline text-fiuYellow"
           >
             Contact FIU
           </a>
           <span aria-hidden="true">|</span>
-          <a href="https://news.fiu.edu" className="underline text-fiuYellow">
+          <a
+            href="https://news.fiu.edu"
+            target="_blank"
+            className="underline text-fiuYellow"
+          >
             FIU News
           </a>
         </nav>
@@ -73,6 +83,7 @@ export default function Footer() {
               <a
                 href={href}
                 aria-label={label}
+                target="_blank"
                 className="hover:text-fiuYellow transition-colors"
               >
                 <Icon size={18} />
@@ -85,6 +96,7 @@ export default function Footer() {
             <a
               href="https://www.flickr.com/photos/fiu"
               aria-label="Flickr"
+              target="_blank"
               className="hover:opacity-70 transition-opacity"
             >
               <img

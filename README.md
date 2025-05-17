@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# FIU Rankings Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive, single-page React app showcasing Florida International University’s highest-ever academic rankings and upward economic mobility metrics. Built with Create React App for zero-config setup and optimized performance.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Tech Stack & Tools
 
-### `npm start`
+| Layer               | Technology / Tool                         |
+| ------------------- | ----------------------------------------- |
+| **UI Library**      | React (functional components, hooks)      |
+| **Styling**         | Tailwind CSS (utility-first CSS)          |
+| **Project Setup**   | Create React App (react-scripts)          |
+| **Linting & Format**| ESLint , Prettier |
+| **Version Control** | Git & GitHub                              |
+| **Hosting**         | Vercel          |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Academic Value** section highlighting top ROI and university rankings  
+- **Economic Mobility** section showcasing minority-serving institution statistics  
+- Responsive
+- Accessible markup (ARIA labels, proper semantic tags)  
 
-### `npm test`
+## Installation
+---
+1. **Clone the repo**  
+   ```bash
+   git clone https://github.com/SowmithSripadi/Assessment2.git
+   cd Assessment2
+    ```
+2. **Install dependencies**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+3. **Start development server**
 
-### `npm run build`
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
+4. **Build for production**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Components Overview
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* **`Hero`**
+  Showcasing FIU’s tagline and #4 ranking by Wall Street Journal with decorative gradient overlay and responsive callout image
+* **`AnchorNav`**
+  “On this page” navigation for smooth scrol
+* **`AcademicValue`**
+  Displays university rankings grid
+* **`EconomicMobility`**
+  Highlights minority-serving institution stats
+* **`SectionHeading`**
+  Shared heading component with an anchored divider
+* **`Footer`** with FIU logo, navigation links, and social media icons
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

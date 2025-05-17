@@ -5,7 +5,7 @@
 /* Smooth scroll for anchor links */
 html {
   scroll-behavior: smooth;
-  overscroll-behavior: none;
+  background: #081e3f;
 }
 
 /* WCAG focus outline (shows only when navigating with keyboard) */

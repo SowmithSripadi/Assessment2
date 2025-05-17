@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Smooth scroll for anchor links */
 html {
   scroll-behavior: smooth;
+}
+
+/* WCAG focus outline (shows only when navigating with keyboard) */
+*:focus-visible {
+  outline: 2px dashed #ffcc00;
+  outline-offset: 2px;
+}
+
+/* Prefer-reduced-motion safety */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }

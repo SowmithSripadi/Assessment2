@@ -23,35 +23,45 @@ export default function AcademicValue() {
   return (
     <section
       id="academic"
-      className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8  md:mt-20 mt-10"
+      aria-labelledby="academic-heading"
+      className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 md:mt-20"
     >
-      <h2 className="text-center text-fiuYellow text-2xl md:text-3xl font-semibold mb-6">
+      <h2
+        id="academic-heading"
+        className="text-center text-fiuYellow text-2xl md:text-3xl font-semibold mb-6"
+      >
         Highest Ranking Ever
       </h2>
+
       <p className="text-center mb-10">
-        No. 64 in the nation in <em>U.S. News & World Report</em>'s public
-        university rankings
+        No. 64 in the nation in <em>U.S. News &amp; World Report</em>'s
+        public-university rankings
       </p>
 
       {/* divider heading */}
-      <SectionHeading title="Academic Value" />
+      <SectionHeading title="Academic Value" id="academic-value" />
 
-      {/* value grid */}
-      <div className="grid md:gap-6 md:grid-cols-3 sm:mt-16 mt-10 gap-10  text-center md:text-left">
-        {items.map((it) => (
-          <div key={it.subtitle} className="flex flex-col gap-1">
-            <h4 className="text-fiuYellow text-2xl md:text-3xl font-semibold">
-              {it.title}
-            </h4>
-            <p className="mt-1 font-semibold text-lg">{it.subtitle}</p>
-            <p className="italic text-md mt-1">(Source: {it.source})</p>
-          </div>
+      {/* value list */}
+      <ul
+        role="list"
+        className="grid gap-10 sm:gap-12 md:gap-6 md:grid-cols-3 text-center md:text-left mt-10 sm:mt-16"
+      >
+        {items.map(({ title, subtitle, source }) => (
+          <li key={subtitle} className="flex flex-col gap-1">
+            <h3 className="text-fiuYellow text-2xl md:text-3xl font-semibold">
+              {title}
+            </h3>
+            <p className="mt-1 font-semibold text-lg">{subtitle}</p>
+            <p className="italic text-md mt-1">(Source: {source})</p>
+          </li>
         ))}
-      </div>
+      </ul>
+
+      {/* highlight call-out */}
       <p className="text-center max-w-3xl mx-auto mt-20 text-xl">
-        FIU has a designated a
-        <span className="text-sky-300"> University of Distinction </span>
-        in environmental resilience by the Florida Board of Governors
+        FIU has been designated a&nbsp;
+        <span className="text-sky-300">University of Distinction&nbsp;</span>
+        in environmental resilience by the Florida Board of Governors.
       </p>
     </section>
   );

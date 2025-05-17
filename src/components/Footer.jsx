@@ -1,22 +1,35 @@
 import React from "react";
 import logo from "../assets/FIU-logo.png";
-import { Facebook, Twitter, Linkedin, Youtube, Instagram } from "lucide-react"; // optional icons library
+
+/* brand icons */
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaYoutube,
+  FaInstagram,
+} from "react-icons/fa";
+
 import flickrPng from "../assets/icons/flickr.png";
 
 const socials = [
   {
     href: "https://www.instagram.com/FIU",
-    Icon: Instagram,
+    Icon: FaInstagram,
     label: "Instagram",
   },
   {
     href: "https://www.linkedin.com/school/fiu",
-    Icon: Linkedin,
+    Icon: FaLinkedinIn,
     label: "LinkedIn",
   },
-  { href: "https://www.facebook.com/FIU", Icon: Facebook, label: "Facebook" },
-  { href: "https://twitter.com/FIU", Icon: Twitter, label: "Twitter" },
-  { href: "https://www.youtube.com/FIU", Icon: Youtube, label: "YouTube" },
+  {
+    href: "https://www.facebook.com/FIU",
+    Icon: FaFacebookF,
+    label: "Facebook",
+  },
+  { href: "https://twitter.com/FIU", Icon: FaTwitter, label: "Twitter" },
+  { href: "https://www.youtube.com/FIU", Icon: FaYoutube, label: "YouTube" },
 ];
 
 export default function Footer() {
@@ -26,7 +39,7 @@ export default function Footer() {
         <img
           src={logo}
           alt="FIU logo"
-          className="w-[250px] md:w-[300px]  mb-4"
+          className="w-[250px] md:w-[300px] mb-4"
           loading="lazy"
         />
 
@@ -36,36 +49,37 @@ export default function Footer() {
         >
           <a
             href="https://admissions.fiu.edu"
-            className=" text-fiuYellow underline"
+            className="underline text-fiuYellow"
           >
             Apply to FIU
           </a>
           <span aria-hidden="true">|</span>
           <a
             href="https://fiu.edu/contact"
-            className=" text-fiuYellow underline"
+            className="underline text-fiuYellow"
           >
             Contact FIU
           </a>
           <span aria-hidden="true">|</span>
-          <a href="https://news.fiu.edu" className=" text-fiuYellow underline">
+          <a href="https://news.fiu.edu" className="underline text-fiuYellow">
             FIU News
           </a>
         </nav>
 
         {/* social icons */}
-        <ul className="flex gap-4 mb-6">
+        <ul role="list" className="flex gap-4 mb-6">
           {socials.map(({ href, Icon, label }) => (
             <li key={href}>
               <a
                 href={href}
                 aria-label={label}
-                className="hover:text-yellow-400 transition-colors"
+                className="hover:text-fiuYellow transition-colors"
               >
                 <Icon size={18} />
               </a>
             </li>
           ))}
+
           {/* Flickr icon */}
           <li>
             <a
@@ -75,8 +89,11 @@ export default function Footer() {
             >
               <img
                 src={flickrPng}
-                alt="Flickr"
-                className="w-[18px] h-[18px] object-contain"
+                alt=""
+                role="presentation"
+                width="18"
+                height="18"
+                className="object-contain"
                 loading="lazy"
               />
             </a>

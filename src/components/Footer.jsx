@@ -21,7 +21,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="mt-28 md:mt-32 pb-12">
+    <footer className="mt-28 pb-16">
       <div className="flex flex-col items-center">
         <img
           src={logo}

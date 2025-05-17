@@ -37,7 +37,7 @@ export default function AcademicValue() {
       <SectionHeading title="Academic Value" />
 
       {/* value grid */}
-      <div className="grid md:gap-6 md:grid-cols-3 sm:mt-16 mt-10 gap-10 sm:gap-0 text-center sm:text-left">
+      <div className="grid md:gap-6 md:grid-cols-3 sm:mt-16 mt-10 gap-10 md:gap-0 text-center md:text-left">
         {items.map((it) => (
           <div key={it.subtitle} className="flex flex-col gap-1">
             <h4 className="text-fiuYellow text-2xl md:text-3xl font-semibold">

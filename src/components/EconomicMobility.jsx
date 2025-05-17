@@ -15,7 +15,7 @@ export default function EconomicMobility() {
         institution focused on making sure every student succeeds.
       </p>
 
-      <div className="grid  gap:4 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 items-start sm:mb-16 mb-10">
+      <div className="grid gap:4 md:gap-8 md:grid-cols-2 lg:grid-cols-3 items-start sm:mb-16 mb-10">
         {/* columns 1-2 : bordered wrapper */}
         <div className="relative md:col-span-2 border p-6 sm:p-8 lg:p-10">
           {/* heading on border */}
@@ -47,7 +47,7 @@ export default function EconomicMobility() {
         </div>
 
         {/* column 3 : third card */}
-        <div className="mt-0 sm:mt-8 p-6 sm:p-8 lg:p-10 ">
+        <div className="mt-0 md:mt-8 p-6 sm:p-8 lg:p-10 ">
           <h4 className="text-fiuYellow text-3xl font-bold">Top 10</h4>
           <p className="mt-1 text-lg font-bold">Economic Diversity</p>
           <p className="italic text-md mt-1">(Source: New York Times)</p>

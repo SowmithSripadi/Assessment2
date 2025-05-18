@@ -46,7 +46,7 @@ export default function Hero() {
       </header>
 
       {/* ───── COLOR STRIPE (purely decorative) ───── */}
-      <div className="flex h-2" aria-hidden="true">
+      <div className="flex h-[10px]" aria-hidden="true">
         <div className="w-1/2 bg-gradient-to-r from-fiuGold to-fiuCyan" />
         <div className="w-1/2 bg-gradient-to-r from-fiuCyan to-fiuGold" />
       </div>

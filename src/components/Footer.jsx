@@ -112,7 +112,9 @@ export default function Footer() {
           </li>
         </ul>
 
-        <p className="text-16px">© 2025 Florida International University</p>
+        <p className="text-16px">
+          &copy; 2025 Florida International University
+        </p>
       </div>
     </footer>
   );

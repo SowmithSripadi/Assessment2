@@ -34,8 +34,8 @@ export default function AcademicValue() {
       </h2>
 
       <p className="text-center mb-10 text-18px-md">
-        No. 64 in the nation in <em>U.S. News &amp; World Report</em>'s
-        public-university rankings
+        No. 64 in the nation in <em>U.S. News &amp; World Report</em>'s public
+        university rankings
       </p>
 
       {/* divider heading */}
@@ -58,9 +58,9 @@ export default function AcademicValue() {
       </ul>
 
       {/* highlight call-out */}
-      <p className="text-center max-w-3xl mx-auto mt-16 text-18px-md">
-        FIU has been designated a&nbsp;
-        <span className="text-sky-300">University of Distinction&nbsp;</span>
+      <p className="text-center max-w-2xl mx-auto mt-16 text-18px-md">
+        FIU has been designated a{" "}
+        <span className="text-sky-300">University of Distinction </span>
         in environmental resilience by the Florida Board of Governors.
       </p>
     </section>

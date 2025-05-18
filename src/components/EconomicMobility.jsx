@@ -10,7 +10,7 @@ export default function EconomicMobility() {
     >
       <SectionHeading title="Upward Economic Mobility" id="mobility-heading" />
 
-      <p className="text-center max-w-3xl mx-auto mb-20 text-18px-md">
+      <p className="text-center max-w-2xl mx-auto mb-20 text-18px-md">
         We are a <span className="text-sky-300">Hispanic</span> serving
         institution and a <span className="text-sky-300">minority</span> serving
         institution focused on making sure every student succeeds.
@@ -37,18 +37,18 @@ export default function EconomicMobility() {
               <h4 className="text-fiuYellow text-2xl sm:text-32px-md font-bold mt-20 sm:mt-0">
                 No. 1
               </h4>
-              <p className="mt-1 text-18px-sm font-bold">
-                awarding Bachelor’s and Master’s degrees to&nbsp;Hispanics
+              <p className="mt-1 text-18px-sm font-bold md:pr-6 pr-0">
+                awarding Bachelor’s and Master’s degrees to Hispanics
               </p>
             </li>
-            <div>
+            <li>
               <h4 className="text-fiuYellow  text-2xl sm:text-32px-md font-bold">
                 Top 10
               </h4>
-              <p className="mt-1 text-18px-sm font-bold">
+              <p className="mt-1 text-18px-sm font-bold md:pr-10 pr-0">
                 awarding Bachelor’s degrees to African Americans
               </p>
-            </div>
+            </li>
           </ul>
         </div>
 
@@ -62,7 +62,7 @@ export default function EconomicMobility() {
         </div>
       </div>
 
-      <p className="text-center max-w-3xl mx-auto text-18px-md">
+      <p className="text-center max-w-2xl mx-auto text-18px-md">
         Our <span className="text-fiuCyan">Pell Grant-eligible students</span>{" "}
         (who account for more than half of our undergraduate population)
         graduate at a higher rate than their classmates.

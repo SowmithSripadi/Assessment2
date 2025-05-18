@@ -2,31 +2,68 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-
-    <!-- Responsive layout -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Brand colours & SEO -->
-    <meta name="theme-color" content="#081E3F" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta
-      name="description"
-      content="Florida International University – Innovation Creates Impact"
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
 
-    <!-- Favicon -->
-    <link rel="icon" href="./favicon.png" />
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Discover how Florida International University’s innovation drives top-tier academic value, #4 social-mobility ranking and record-breaking national impact."
+    />
+    <link rel="canonical" href="https://assessment2-eta.vercel.app/" />
 
-    <!-- ── Web fonts ── -->
-    <link rel="stylesheet" href="https://use.typekit.net/fpx6thr.css" />
-
-    <!-- FIU-hosted font files -->
-    <link rel="stylesheet" href="https://digicdn.fiu.edu/fonts/furore.css" />
-    <link rel="stylesheet" href="https://digicdn.fiu.edu/fonts/barlow.css" />
     <title>FIU | Innovation Creates Impact</title>
+    <link rel="icon" href="favicon.png" />
+
+    <!-- ─────────  Font PERFORMANCE  ───────── -->
+    <!-- Preconnect to font hosts -->
+    <link rel="preconnect" href="https://use.typekit.net" />
+    <link rel="preconnect" href="https://digicdn.fiu.edu" />
+
+    <link rel="preload" as="style" href="https://use.typekit.net/fpx6thr.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.typekit.net/fpx6thr.css"
+      media="print"
+      onload="this.onload=null;this.media='all'"
+    />
+
+    <!-- FIU-hosted “Furore” -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://digicdn.fiu.edu/fonts/furore.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://digicdn.fiu.edu/fonts/furore.css"
+      media="print"
+      onload="this.onload=null;this.media='all'"
+    />
+
+    <!-- FIU-hosted “Barlow” -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://digicdn.fiu.edu/fonts/barlow.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://digicdn.fiu.edu/fonts/barlow.css"
+      media="print"
+      onload="this.onload=null;this.media='all'"
+    />
   </head>
 
-  <body class="antialiased">
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+  <body class="antialiased text-gray-900">
+    <!-- accessibility -->
     <div id="root"></div>
+
+    <noscript>
+      <p>This site works best with JavaScript enabled.</p>
+    </noscript>
   </body>
 </html>

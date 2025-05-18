@@ -27,8 +27,8 @@ export default function Hero() {
         />
 
         {/* headline content */}
-        <div className="relative z-10 h-full flex flex-col items-center text-center gap-10">
-          <h1 className="font-furore uppercase text-fiuYellow tracking-3.22 text-base sm:text-lg md:text-26px drop-shadow-md mt-44">
+        <div className="z-10 h-full flex flex-col items-center text-center gap-10">
+          <h1 className="font-furore uppercase text-fiuYellow tracking-3.22 text-base sm:text-lg md:text-26px drop-shadow-md md:mt-44 mt-24">
             Florida International University
           </h1>
           <h1 className="font-barlow font-extraBold uppercase tracking-3.22 text-2xl sm:text-3xl md:text-5xl lg:text-60px drop-shadow-md max-w-[90%]">

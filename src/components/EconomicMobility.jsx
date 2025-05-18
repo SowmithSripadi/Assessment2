@@ -29,10 +29,7 @@ export default function EconomicMobility() {
           </h3>
 
           {/* two stats inside the box */}
-          <ul
-            role="list"
-            className="mt-8 grid md:grid-cols-2 gap-x-12 gap-y-10"
-          >
+          <ul className="mt-8 grid md:grid-cols-2 gap-x-12 gap-y-10">
             <li>
               <h4 className="text-fiuYellow text-2xl sm:text-32px-md font-bold mt-20 sm:mt-0">
                 No. 1

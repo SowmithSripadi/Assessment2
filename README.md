@@ -8,7 +8,7 @@ A responsive, single-page React app showcasing Florida International Universityâ
 
 | Layer                | Technology / Tool                    |
 | -------------------- | ------------------------------------ |
-| **UI Library**       | React (functional components, hooks) |
+| **UI Library**       | React (functional components)        |
 | **Styling**          | Tailwind CSS (utility-first CSS)     |
 | **Project Setup**    | Create React App (react-scripts)     |
 | **Linting & Format** | ESLint , Prettier                    |
@@ -37,24 +37,18 @@ A responsive, single-page React app showcasing Florida International Universityâ
 
    ```bash
    npm install
-   # or
-   yarn install
    ```
 
 3. **Start development server**
 
    ```bash
    npm start
-   # or
-   yarn start
    ```
 
 4. **Build for production**
 
    ```bash
    npm run build
-   # or
-   yarn build
    ```
 
 ---
